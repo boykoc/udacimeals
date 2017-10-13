@@ -15,7 +15,7 @@ class App extends Component {
 }
 
 // Return state from redux store as array so we can easily work with it as grid.
-function mapStateToProps (calendar) {
+function mapStateToProps ({ calendar, food }) {
   const dayOrder = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
   
   return {
